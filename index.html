@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MARAVELA: NEON TIDE — Open-World Crime at Dusk</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <div id="hud">
+    <div id="hud-left">
+      <div id="cash">$<span id="cash-val">500</span></div>
+      <div id="respect">RESPECT <span id="respect-val">0</span> · <span id="rank-val">Street Punk</span></div>
+      <div id="stars"><span id="star1">☆</span><span id="star2">☆</span><span id="star3">☆</span><span id="star4">☆</span><span id="star5">☆</span></div>
+    </div>
+    <div id="hud-right">
+      <div id="radio">RADIO: <span id="radio-val">98.7 TIDE FM</span> <span class="hint">[F] switch</span></div>
+      <div id="clock">DUSK <span id="clock-val">19:42</span> · MARAVELA</div>
+      <div id="crew">CREW: <span id="crew-val">Rico (Driver) ready</span> <span class="hint">[1/2/3] ability</span></div>
+    </div>
+    <div id="mission-box">
+      <div id="mission-title">MISSION 1 — WELCOME TO MARAVELA</div>
+      <div id="mission-obj">Drive to the yellow marker on the boardwalk.</div>
+      <div id="mission-progress">0 / 10 missions complete</div>
+    </div>
+    <canvas id="minimap" width="220" height="170"></canvas>
+    <div id="toast"></div>
+  </div>
+</div>
+<div id="overlay">
+  <div id="overlay-card">
+    <h1>MARAVELA <span>NEON TIDE</span></h1>
+    <p class="tag">A sun-soaked open-world crime game. Ten story missions. Five-star MVPD heat. One city that never sleeps.</p>
+    <div id="menu-buttons">
+      <button id="btn-start">START ENGINE</button>
+      <button id="btn-continue">CONTINUE SAVE</button>
+      <button id="btn-how">HOW TO PLAY</button>
+    </div>
+    <div id="howto" hidden>
+      <p><b>WASD / Arrows</b> — drive or walk &nbsp;·&nbsp; <b>E</b> — enter car / carjack &nbsp;·&nbsp; <b>Space</b> — handbrake</p>
+      <p><b>F</b> — switch radio &nbsp;·&nbsp; <b>1 / 2 / 3</b> — crew ability (Rico boost, Lena hack, Marco muscle)</p>
+      <p><b>G</b> — garage &nbsp;·&nbsp; <b>B</b> — shop &nbsp;·&nbsp; <b>S</b> — save game &nbsp;·&nbsp; <b>P</b> — pause &nbsp;·&nbsp; <b>M</b> — mute</p>
+      <p>Lose the cops to drop wanted stars. Finish missions to earn cash and respect. Respect unlocks ranks, crew and cars.</p>
+    </div>
+    <p class="foot">A fictional city. Any resemblance to real places is coincidence. Best on desktop, keyboard required.</p>
+  </div>
+</div>
+<div id="shop-panel" hidden>
+  <h2 id="shop-title">SHOP</h2>
+  <div id="shop-items"></div>
+  <button id="shop-close">CLOSE [B / G]</button>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
